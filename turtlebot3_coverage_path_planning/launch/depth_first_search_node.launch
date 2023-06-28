@@ -1,0 +1,5 @@
+<launch>
+  <node name="depth_first_search_node" pkg="turtlebot3_coverage_path_planning" type="depth_first_search_node" output="screen"/>
+  <node name="map_update_node" pkg="turtlebot3_coverage_path_planning" type="map_update_node" output="screen"/>
+  <node pkg="rviz" type="rviz" name="rviz" required="true" args="-d $(find turtlebot3_coverage_path_planning)/rviz/turtlebot3_coverage_path_planning.rviz"/>
+</launch>
