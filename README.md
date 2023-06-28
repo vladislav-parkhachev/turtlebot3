@@ -24,7 +24,7 @@ ____
 ```
 source devel/setup.bash
 export TURTLEBOT3_MODEL=waffle_pi
-roslaunch turtlebot3_gazebo turtlebot3_house_world.launch
+roslaunch turtlebot3_gazebo turtlebot3_world.launch
 ```
 ____
 ## 5. Open a new terminal window and launch gmapping.
@@ -44,7 +44,7 @@ ____
 ## 7 Open a new terminal window and launch the nodes of the package depth_first_search_node.launch
 ```
 source devel/setup.bash
-roslaunch depth_first_search_node.launch
+roslaunch turtlebot3_coverage_path_planning depth_first_search_node.launch
 ```
 ____
 
