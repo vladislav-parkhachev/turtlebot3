@@ -13,4 +13,7 @@
     <param name="map_frame"  value="$(arg set_map_frame)"/>
     <rosparam command="load" file="$(find turtlebot3_slam)/config/gmapping_params.yaml" />
   </node>
+  
+  <node pkg="turtlebot3_slam" type="path_gmapping_node" name="path_gmapping_node" output="screen"/>
+  
 </launch>
